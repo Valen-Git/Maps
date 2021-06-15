@@ -1,0 +1,130 @@
+#map {
+  height: 500px;
+}
+
+body{
+  font: 15px/1.5em Georgia, serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+/* Global*/
+.container{
+  width: 80%;
+  margin:auto;
+  overflow: hidden;
+}
+ul{ 
+  margin:0;
+  padding:0;
+}
+
+.button-1{
+  height:30px;
+  background-color:rgb(23, 41, 78);
+  border:0;
+  padding-left: 15px;
+  padding-right: 15px;
+  color:white;
+  font-weight: bold;
+}
+.button-2{
+  height:30px;
+  background-color:rosybrown;
+  border:0;
+  padding-left: 15px;
+  padding-right: 15px;
+  color:rgb(23, 41, 78);
+  font-weight: bold;
+}
+
+.dark{
+  padding:15px;
+  background-color: rgb(23, 41, 78);
+  color: rgb(224, 214, 214);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Header **/
+
+header{
+  background: rgb(32, 38, 68);
+  color: lightgray;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: rgb(206, 192, 148) 5px solid;
+}
+header a{
+  color: rgb(206, 192, 148);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header li{
+
+display:inline;
+padding: 0 30px 0 30px;
+}
+header #branding{
+  float:left;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header a:hover{
+  color:lightgray;
+  font-weight: bold;
+}
+
+/* showcase */
+#showcase{
+  min-height:400px;
+  background:url('images/img-showcase.jpg') no-repeat;
+  text-align: center;
+  color:rgb(23, 41, 78);
+}
+
+
+/*main-col*/
+article#main-col{
+  float: left;
+  width:65%;
+}
+
+/* footer*/
+
+
+footer{
+  padding:10px;
+  margin-top: 20px;
+  background-color:rgb(23, 41, 78);
+  color:white;
+  text-align: center;
+}
+
+/* Media Queries*/
+
+@media(max-width: 768px){
+          
+      header #branding,
+      header nav,
+      header nav li,
+      #newsletter h1,
+      #newsletter form,
+      #boxes .box,
+      article#main-col,
+      aside#sidebar{
+          float:none;
+          text-align: center;
+          width:100%;
+      }
+      header{
+          padding-bottom: 20px;
+      }
+      
+  }
